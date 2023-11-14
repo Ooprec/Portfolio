@@ -3,33 +3,11 @@ import java.util.ArrayList;
 import java.util.Random;
 
 public class Library {
-    public static int[] intArray = {10,9,88,7,6,5,4,3,2,1};
-
     private static final String alphabet = "AaBbCcDdEeFfGgHhIiJjKkLlMmNnOoPpQqRrSsTtUuVvWwXxYyZz0123456789";
-    public static void main(String[] args) {        
-        
-    int[] randomNumbers = randomIntArray(20,1,20);
-
-    // System.out.println(intArrayToString(randomNumbers));
-    // sortIntegers(randomNumbers);
-    // System.out.println(intArrayToString(randomNumbers));
-    String[] randomWords = {
-        "Elephant",
-        "Sunshine",
-        "Harmony",
-        "Cascade",
-        "Lighthouse",
-        "Whimsical",
-        "Serendipity",
-        "Enchanting",
-        "Tranquil",
-        "Meadow"
-    };
-
-    System.out.println(stringArrayToString(randomWords));
-    alphabeticSort(randomWords);
-    System.out.println(stringArrayToString(randomWords));
-
+    
+    public static void main(String[] args) 
+    {        
+     
     }
 
     /**
@@ -39,25 +17,19 @@ public class Library {
      */
     public static void alphabeticSort(String[] array)
     {
-
         for (int n = 0; n < array.length * array.length; n++)
         {
-
             for (int i = 0; i < array.length; i++)
             {
                 try {
                     if (alphabet.indexOf(array[i].substring(0,1)) != -1 && alphabet.indexOf(array[i].substring(0,1)) > alphabet.indexOf(array[i+1].substring(0,1)))
                     {
-                        
                         String temp = array[i];
                         array[i] = array[i+1];
                         array[i+1] = temp;
                     }
                 }
-                catch (Exception e)
-                {
-
-                }
+                catch (Exception e) {}
             }
         }
     }
@@ -103,6 +75,11 @@ public class Library {
         return output;
     }
 
+    /**
+     * 
+     * @param array input array
+     * @return string of nicely formatted string[]
+     */
     public static String stringArrayToString(String[] array)
     {
         String output = "";
@@ -175,7 +152,66 @@ public class Library {
         }
     }
 
+    /**
+     * switches the two input values, works for a few different data types
+     * @param n1 value 1 
+     * @param n2 value 2
+     */ 
 
+    public static void swap(int n1, int n2)
+    {
+        int temp = n1;
+        n1 = n2;
+        n2 = temp;
+    }
+    public static void swap(String n1, String n2)
+    {
+        String temp = n1;
+        n1 = n2;
+        n2 = temp;
+    }
+    public static void swap(double n1, double n2)
+    {
+        double temp = n1;
+        n1 = n2;
+        n2 = temp;
+    }
+    public static void swap(boolean n1, boolean n2)
+    {
+        boolean temp = n1;
+        n1 = n2;
+        n2 = temp;
+    }
+    public static void swap(float n1, float n2)
+    {
+        float temp = n1;
+        n1 = n2;
+        n2 = temp;
+    }
+    public static void swap(char n1, char n2)
+    {
+        char temp = n1;
+        n1 = n2;
+        n2 = temp;
+    }
+    public static void swap(int[] n1, int[] n2)
+    {
+        int[] temp = n1;
+        n1 = n2;
+        n2 = temp;
+    }
+    public static void swap(String[] n1, String[] n2)
+    {
+        String[] temp = n1;
+        n1 = n2;
+        n2 = temp;
+    }
+    public static void swap(double[] n1, double[] n2)
+    {
+        double[] temp = n1;
+        n1 = n2;
+        n2 = temp;
+    }
 
-
+    
 }
