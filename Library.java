@@ -1,5 +1,4 @@
-// This is going to be a little library I use for projects in Data Structures, hopefully.
-import java.util.ArrayList;
+// This is going to be a little library I use for projects in class, hopefully.
 import java.util.Random;
 
 public class Library {
@@ -7,7 +6,7 @@ public class Library {
     
     public static void main(String[] args) 
     {        
-     
+        
     }
 
     /**
@@ -157,7 +156,6 @@ public class Library {
      * @param n1 value 1 
      * @param n2 value 2
      */ 
-
     public static void swap(int n1, int n2)
     {
         int temp = n1;

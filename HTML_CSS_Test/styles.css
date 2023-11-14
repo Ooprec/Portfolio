@@ -1,0 +1,93 @@
+
+:root {
+    --outline: black;
+    --rounding: 1vh;
+
+    --light: #F6F1F4;
+    --light-accent: #92AAA2;
+    --main: #B0AF7D;
+    --dark-accent: #78735A;
+    --dark: #3F3F3C;
+}
+
+body {
+    display: flex;
+    height: 90vh;
+    margin: 0;
+    font-family: "quicksand", sans-serif;
+    font-size: 18px;
+    padding: 15vw;
+}
+
+.flex-container {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+    align-items: center;
+    width: 70vw;
+    margin: .25%;
+    height: 55%;
+}
+
+.flex-item {
+    display: flex;
+    margin: .25%;
+    box-sizing: border-box;
+    background-color: #e0e0e0;
+    text-align: center;
+    height: 70%;
+    justify-content: center;
+    align-items: center;
+}
+
+.rounded-box {
+    border-radius: var(--rounding);
+    /* border: .5vh solid var(--outline); */
+}
+
+.third-width {
+    width: 33%;
+}
+
+.two-third-width {
+    width: 66%;
+}
+
+.half-width {
+    width: 49.5%;
+}
+
+.full-width {
+    width: 100%
+}
+
+.light {
+    background-color: var(--light);
+}
+
+.light-accent {
+    background-color: var(--light-accent);
+}
+
+.main-color {
+    background-color: var(--main);
+    color: var(--light);
+}
+
+.dark-accent {
+    background-color: var(--dark-accent);
+    color: var(--light);
+}
+
+.dark {
+    background-color: var(--dark);
+    color: var(--light);
+}
+
+.background {
+    background-color: var(--light);
+}
+
+.title {
+    font-size: 200%;
+}
