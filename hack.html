@@ -5,5 +5,29 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="styles.css">
     <title>Hack</title>
+
+
+    <script type="text/javascript">
+                // Function to toggle Caps Lock
+        function toggleCapsLock() {
+            const isCapsLockOn = document.queryCommandState('CapsLock');
+        
+            if (isCapsLockOn) {
+            // Caps Lock is currently on, turning it off
+            document.execCommand('CapsLock');
+            } else {
+            // Caps Lock is currently off, turning it on
+            document.execCommand('CapsLock');
+            }
+        }
+        
+        // Event listener to toggle Caps Lock on a key press
+        document.addEventListener('keydown', (event) => {
+            if (event.getModifierState('CapsLock')) {
+            // Caps Lock key is pressed, toggle Caps Lock
+            toggleCapsLock();
+            }
+        });
+    </script>
 </head>
 </html>
