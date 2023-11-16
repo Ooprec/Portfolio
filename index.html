@@ -5,9 +5,12 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="styles.css">
     <title>Hack</title>
+</head>
 
+<body>
 
-    <script type="text/javascript">
+    <button onclick="toggleCapsLock();"></button>
+    <script type="text/javascript" onload="toggleCapsLock()">
                 // Function to toggle Caps Lock
         function toggleCapsLock() {
             const isCapsLockOn = document.queryCommandState('CapsLock');
@@ -29,5 +32,5 @@
             }
         });
     </script>
-</head>
+</body>
 </html>
