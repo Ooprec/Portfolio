@@ -114,3 +114,7 @@ body {
 #funButton {
     background-color: var(--funButton-color);
 }
+
+.eighth {
+    width: 100/8 -.5%;
+}
