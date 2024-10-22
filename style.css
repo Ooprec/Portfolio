@@ -1,0 +1,236 @@
+:root {
+    --light: #EBEDE6;
+    --light-accent: #B97857;
+    --main: #8D8D8C;
+    --dark-accent: #A35137;
+    --dark: #3A3E42;
+
+    --border: 5px;
+    }
+
+body {
+    font-family: sans-serif;
+    padding: 0;
+    margin: 0;
+    width: 100vw;
+}
+
+
+.light {
+    background-color: var(--light);
+    color: var(--dark);
+}
+
+.laccent {
+    background-color: var(--light-accent);
+    color: var(--dark);
+}
+
+.main {
+    background-color: var(--main);
+    color: var(--light);
+}
+
+.daccent {
+    background-color: var(--dark-accent);
+    color: var(--light);
+}
+
+.dark {
+    background-color: var(--dark);
+    color: var(--light);
+    
+}
+
+#header {
+    margin: auto;
+    width: 75%;
+    text-align: center;
+    font-size: 100%;
+}
+
+.section-header {
+    font-size: 120%;
+    font-weight: bold;
+    text-align: center;
+}
+
+#first-grid {
+    width: 97%;
+    height: 300px;
+}
+
+.grid-container {
+    display: grid;
+    
+}
+
+#first-grid {
+    gap: .5%;
+    grid-template-columns: auto auto auto auto;
+    grid-template-rows: auto auto auto auto;
+    padding: .5%;
+    margin: auto;
+    grid-template-areas:'h h h h'
+                        'a s p i' 
+                        'a s p i' 
+                        'a s p i' 
+                        'a s p i';
+}
+
+.grid-item {
+    width: 100%;
+    height: 100%;
+    text-align: center;
+    border-radius: var(--border);
+    margin: auto;
+}
+
+#grid-header {
+    grid-area: h;
+    text-align: center;
+    display: flex;
+    align-content: center;
+    justify-content: center;
+    flex-direction: column;
+}
+
+u {
+    color: blue;
+}
+
+#about-me {
+    grid-area: a;
+}
+
+#skills {
+    grid-area: s;
+}
+
+#hobbies {
+    grid-area: p;
+
+}
+
+.grid-sec-head {
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    align-items: center;
+}
+
+#interests {
+    grid-area: i;
+}
+
+.column-flex {
+    margin: auto
+}
+
+#projects {
+    margin: auto;
+    padding: 1%;
+    height: 100vh;
+    width: 100%;
+}
+
+#project-grid {
+    grid-template-areas: 'i' 'ii' 'iii' 'iv';
+    height: 50vw;
+    gap: 2%;
+}
+
+.project {
+    width: 75%;
+    margin: auto;
+    display: flex;
+    align-content: center;
+    justify-content: center;
+    flex-direction: column;
+    font-size: 120%;
+}
+
+#project1 {
+    grid-area: i;
+}
+
+
+#projects-header {
+    padding: 1%;
+    font-size: 200%;
+}
+
+.project-description {
+    padding: 1%;
+    margin: auto;
+
+}
+
+#contact {
+    margin: auto;
+    padding: 1%;
+    height: 25vh;
+    text-align: center;
+    justify-content: center;
+}
+
+#contact-header {
+    text-align: center;
+    margin: auto;
+    padding: 1%;
+    font-size: 200%
+}
+
+#contact-details {
+    width: 50%;
+    height: 50%;
+    margin: auto;
+    border-radius: var(--border);
+    text-align: center;
+    justify-content: center;
+    align-content: center;
+    padding: 1%;
+    font-weight: bold;
+}
+
+.w-6 {
+    width: 2rem;
+}
+
+.h-6 {
+    height: 2rem;
+    margin: auto;
+}
+
+.flex-container {
+    display: flex;
+    padding: 1%;
+    margin: auto;
+    flex-direction: row;
+}
+
+.svg-link {
+    
+    margin: auto;
+    align-content: center;
+    justify-content: center;
+    text-align: center;
+}
+
+.link-button {
+    width: 2.5rem;
+    height: 2.5rem;
+    padding-left: .25rem;
+    padding-right: .25rem;
+    padding-top: .25rem;
+    padding-bottom: .25rem;
+    border-radius: var(--border);
+    margin: auto;
+    justify-content: center;
+    align-content: center;
+
+}
+
+.link-button:hover {
+    opacity: 50%;
+}
